@@ -19,6 +19,8 @@
 //          font-weight: bold
 // - @headingsColor: @braun
 // - type.less:
+//    .h1 ->small
+//          color: @braun
 //    .h3 -> small
 //          color: @braun
 //          font-weight: bold
@@ -28,6 +30,8 @@
 //          color: @white
 //    .tabs-left > .nav-tabs:
 //          border-right-color: @braun
+//    .page-header:
+//      border color @braun
 // - @tableborder: @braun;
 // - @successText: @success;
 // - labels-badges.less:
@@ -41,7 +45,18 @@
 //          textShadow löschen
 //          border: 1px solid @braun
 // - @infoText: @info
-//
+// - forms.less:
+//    .fieldset:
+//      border: 0
+//    .form-actions:
+//      border-top und background weg
+// - alerts.less:
+//    .alert
+//      border: 2px solid @braun
+// - navs.less:
+//    .nav-tabs .open .dropdown-toggle, .nav-pills .open .dropdown-toggle, .nav > li.dropdown.open.active > a:hover
+//      background-color: @horange;
+//      color: @braun;
 //
 // ----------------------------
 @horange:               #ffed9a;
@@ -148,13 +163,13 @@
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            @white;
+@dropdownBackground:            @horange;
 @dropdownBorder:                rgba(0,0,0,.2);
 @dropdownLinkColor:             @grayDark;
 @dropdownLinkColorHover:        @white;
 @dropdownLinkBackgroundHover:   @linkColor;
-@dropdownDividerTop:            #e5e5e5;
-@dropdownDividerBottom:         @white;
+@dropdownDividerTop:            @braun;
+@dropdownDividerBottom:         @horange;
 
 
 
@@ -218,9 +233,9 @@
 
 // Form states and alerts
 // -------------------------
-@warningText:             #c09853;
-@warningBackground:       #fcf8e3;
-@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+@warningText:             @braun;
+@warningBackground:       @horange;
+@warningBorder:           @braun;
 
 @errorText:               #b94a48;
 @errorBackground:         #f2dede;
