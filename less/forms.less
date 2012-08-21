@@ -164,7 +164,7 @@ input[type="file"] {
 // Make select elements obey height by applying a border
 select {
   width: 220px; // default input width + 10px of padding that doesn't get applied
-  border: 1px solid #bbb;
+  border: 1px solid @braun;
 }
 
 // Make multiple select elements height not fixed
@@ -275,7 +275,7 @@ select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
   background-color: @inputDisabledBackground;
-  border-color: #ddd;
+  border-color: @braun;
 }
 // Explicitly reset the colors here
 input[type="radio"][disabled],
@@ -310,9 +310,9 @@ input:focus:required:invalid,
 textarea:focus:required:invalid,
 select:focus:required:invalid {
   color: #b94a48;
-  border-color: #ee5f5b;
+  border-color: @braun;
   &:focus {
-    border-color: darken(#ee5f5b, 10%);
+    border-color: @braun;
     .box-shadow(0 0 6px lighten(#ee5f5b, 20%));
   }
 }
@@ -349,7 +349,7 @@ select:focus:required:invalid {
 
 .help-block,
 .help-inline {
-  color: @gray; // lighten the text some for contrast
+  color: @braun; // lighten the text some for contrast
 }
 
 .help-block {
@@ -400,8 +400,8 @@ select:focus:required:invalid {
     text-align: center;
     text-shadow: 0 1px 0 @white;
     vertical-align: middle;
-    background-color: @grayLighter;
-    border: 1px solid #ccc;
+    background-color: @horange;
+    border: 1px solid @braun;
   }
   .add-on,
   .btn {
